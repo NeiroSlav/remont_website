@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #222;
-    background: #f8f8f8;
+    background: #1e1e1e;
 }
 
 a {
@@ -33,6 +37,31 @@ header .logo {
     font-weight: bold;
 }
 
+.top-row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.phone-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffc400;
+    color: white;
+    transition: 0.3s ease;
+    margin-left: 30px;
+}
+
+.phone-icon:hover {
+    transform: scale(1.1);
+    background: #ff8533;
+}
+
+
 nav {
     margin-top: 10px;
 }
@@ -48,8 +77,7 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('https://images.unsplash.com/photo-1505691723518-36a0f673c03f?q=80&w=1600') center/cover no-repeat;
+    background: rgba(0,0,0,0.7);
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -131,4 +159,8 @@ footer a {
     .hero h1 {
         font-size: 30px;
     }
+    .top-row {
+        justify-content: space-between;
+    }
+
 }
