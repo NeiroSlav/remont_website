@@ -40,7 +40,14 @@ header .logo {
 .top-row {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
+}
+
+.phone-number {
+  margin-left: 50px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .phone-icon {
@@ -53,7 +60,6 @@ header .logo {
   background: #ffc400;
   color: white;
   transition: 0.3s ease;
-  margin-left: 30px;
 }
 
 .phone-icon:hover {
@@ -160,7 +166,7 @@ footer a {
   .hero h1 {
     font-size: 30px;
   }
-  .top-row {
-    justify-content: space-between;
+  .phone-number {
+    display: none;
   }
 }
